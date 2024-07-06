@@ -1,0 +1,31 @@
+{
+  "item:wooden_spear": {
+    "ingredients": {
+      "item:wood": 3
+    }
+  },
+  "item:fire_starter": {
+    "ingredients": {
+      "item:wood": 1,
+      "item:twigs": 8
+    }
+  },
+  "item:cooked_venison": {
+    "ingredients": {
+      "item:raw_venison": 1
+    },
+    "req": ["fire"]
+  },
+  "item:torch": {
+    "ingredients": {
+      "item:twigs": 1
+    },
+    "req": ["fire"]
+  },
+  "item:stone_hatchet": {
+    "ingredients": {
+      "item:wood": 2,
+      "item:stone": 3
+    }
+  }
+}

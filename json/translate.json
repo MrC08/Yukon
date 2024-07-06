@@ -1,0 +1,444 @@
+{
+  "text": {
+    "title": {
+      "en": "Yukon"
+    },
+    "play": {
+      "en": "Play",
+      "es": "Jugar"
+    },
+    "language": {
+      "en": "Language",
+      "es": "Idioma"
+    },
+    "win": {
+      "en": "After your long journey, you finally made it. You won."
+    },
+    "death": {
+      "screen": {
+        "en": "▓██   ██▓ ▒█████   █    ██    ▓█████▄  ██▓▓█████ ▓█████▄ \n▒██  ██▒▒██▒  ██▒ ██  ▓██▒   ▒██▀ ██▌▓██▒▓█   ▀ ▒██▀ ██▌\n  ▒██ ██░▒██░  ██▒▓██  ▒██░   ░██   █▌▒██▒▒███   ░██   █▌\n  ░ ▐██▓░▒██   ██░▓▓█  ░██░   ░▓█▄   ▌░██░▒▓█  ▄ ░▓█▄   ▌\n  ░ ██▒▓░░ ████▓▒░▒▒█████▓    ░▒████▓ ░██░░▒████▒░▒████▓ \n   ██▒▒▒ ░ ▒░▒░▒░ ░▒▓▒ ▒ ▒     ▒▒▓  ▒ ░▓  ░░ ▒░ ░ ▒▒▓  ▒ \n ▓██ ░▒░   ░ ▒ ▒░ ░░▒░ ░ ░     ░ ▒  ▒  ▒ ░ ░ ░  ░ ░ ▒  ▒ \n ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░     ░ ░  ░  ▒ ░   ░    ░ ░  ░ \n ░ ░         ░ ░     ░           ░     ░    \n░  ░   ░    \n ░ ░                           ░                  ░     ",
+        "es": " ██░ ██  ▄▄▄        ██████                            \n▓██░ ██▒▒████▄    ▒██    ▒                            \n▒██▀▀██░▒██  ▀█▄  ░ ▓██▄                              \n░▓█ ░██ ░██▄▄▄▄██   ▒   ██▒                           \n░▓█▒░██▓ ▓█   ▓██▒▒██████▒▒                           \n ▒ ░░▒░▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░                           \n ▒ ░▒░ ░  ▒   ▒▒ ░░ ░▒  ░ ░                           \n ░  ░░ ░  ░   ▒   ░  ░  ░                             \n ░  ░  ░      ░  ░      ░                             \n\n ███▄ ▄███▓ █    ██ ▓█████  ██▀███  ▄▄▄█████▓ ▒█████  \n▓██▒▀█▀ ██▒ ██  ▓██▒▓█   ▀ ▓██ ▒ ██▒▓  ██▒ ▓▒▒██▒  ██▒\n▓██    ▓██░▓██  ▒██░▒███   ▓██ ░▄█ ▒▒ ▓██░ ▒░▒██░  ██▒\n▒██    ▒██ ▓▓█  ░██░▒▓█  ▄ ▒██▀▀█▄  ░ ▓██▓ ░ ▒██   ██░\n▒██▒   ░██▒▒▒█████▓ ░▒████▒░██▓ ▒██▒  ▒██▒ ░ ░ ████▓▒░\n░ ▒░   ░  ░░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░  ▒ ░░   ░ ▒░▒░▒░ \n░  ░      ░░░▒░ ░ ░  ░ ░  ░  ░▒ ░ ▒░    ░      ░ ▒ ▒░ \n░      ░    ░░░ ░ ░    ░     ░░   ░   ░      ░ ░ ░ ▒  \n       ░      ░        ░  ░   ░                  ░ ░"
+      },
+      "cause": {
+        "text": {
+          "en": "Cause of death: "
+        },
+        "dehydration": {
+          "en": "Dehydration"
+        },
+        "starvation": {
+          "en": "Starvation"
+        },
+        "freezing": {
+          "en": "Hypothermia"
+        },
+        "animal_attack": {
+          "en": "Animal attack"
+        },
+        "cholera": {
+          "en": "Cholera"
+        },
+        "appendicitis": {
+          "en": "Appendicitis"
+        }
+      }
+    },
+    "shelter": {
+      "missing": {
+        "en": "You do not have enough materials to make a shelter."
+      },
+      "choose": {
+        "en": "Which shelter?"
+      },
+      "built": {
+        "lean-to": {
+          "en": "You built a lean-to!"
+        }
+      }
+    },
+    "inventory": {
+      "you_have": {
+        "en": "You have"
+      },
+      "empty": {
+        "en": "There isn't anything in your inventory."
+      }
+    },
+    "explore": {
+      "found": {
+        "en": "You go exploring around the camp. You found:"
+      },
+      "water": {
+        "found": {
+          "en": "You found some water! Drink it?"
+        },
+        "drank": {
+          "en": "The water was clean. You drank it."
+        },
+        "dirty": {
+          "en": "Upon closer inspection, the water doesn't look clean. Drink it anyways?"
+        },
+        "drank_anyways": {
+          "en": "You drank the water anyways. Maybe you shouldn't have..."
+        }
+      },
+      "deer": {
+        "found": {
+          "en": "You see a deer. Try and hunt it?"
+        },
+        "kill": {
+          "en": "You managed to kill the deer!"
+        },
+        "escape": {
+          "en": "The deer managed to run off."
+        }
+      },
+      "torch_burn_out": {
+        "en": "You torch burnt out while exploring."
+      }
+    },
+    "eat": {
+      "missing": {
+        "en": "You do not have any food."
+      },
+      "choose": {
+        "en": "What to eat?"
+      }
+    },
+    "drink": {
+      "missing": {
+        "en": "You do not have anything to drink."
+      },
+      "choose": {
+        "en": "What to drink?"
+      }
+    },
+    "craft": {
+      "missing": {
+        "en": "You can't craft anything right now."
+      },
+      "choose": {
+        "en": "Which recipe?"
+      },
+      "requires": {
+        "en": "requires"
+      },
+      "crafted": {
+        "en": "You crafted a"
+      }
+    },
+    "fire": {
+      "missing": {
+        "en": "You do not have any flammable material."
+      },
+      "feul": {
+        "en": "What to use as fuel?"
+      }
+    },
+    "refuel": {
+      "missing": {
+        "en": "You don't have anything flammable."
+      },
+      "choose": {
+        "en": "What to burn?"
+      }
+    },
+    "equipment": {
+      "current": {
+        "en": "Right now, you're using: "
+      },
+      "missing": {
+        "en": "You don't have anything equipped right now."
+      },
+      "unequip": {
+        "en": "Take off "
+      },
+      "choose": {
+        "en": "What to equip?"
+      }
+    },
+    "sleep": {
+      "cold": {
+        "en": "Its too cold to sleep."
+      },
+      "wake_up": {
+        "en": "You woke up. Hours slept for: "
+      }
+    },
+    "trail": {
+      "find": {
+        "en": "You found a trail!"
+      },
+      "night": {
+        "en": "It is becoming night. At night, travel through the wilderness is dangerous. Get off the trail?"
+      },
+      "howls": {
+        "en": "You hear howling. Maybe you should've waited until day..."
+      },
+      "end": {
+        "en": "You followed the trail all the way to its terminus. You decide to start a new camp."
+      },
+      "take": {
+        "en": "Taking trail"
+      }
+    }
+  },
+  "temperature": {
+    "hot": {
+      "en": "Hot"
+    },
+    "nice": {
+      "en": "Nice"
+    },
+    "cool": {
+      "en": "Cool"
+    },
+    "cold": {
+      "1": {
+        "en": "Cold"
+      },
+      "2": {
+        "en": "Very Cold"
+      },
+      "3": {
+        "en": "Frigid"
+      },
+      "4": {
+        "en": "Sub-zero"
+      },
+      "5": {
+        "en": "Far below zero"
+      },
+      "6": {
+        "en": "hypothermic"
+      },
+      "7": {
+        "en": "glacial"
+      }
+    }
+  },
+  "hunger": {
+    "0": {
+      "en": "Full"
+    },
+    "1": {
+      "en": "Peckish"
+    },
+    "2": {
+      "en": "Hungry"
+    },
+    "3": {
+      "en": "Famished"
+    },
+    "4": {
+      "en": "Ravenous"
+    },
+    "5": {
+      "en": "Starving"
+    }
+  },
+  "thirst": {
+    "0": {
+      "en": "Hydrated"
+    },
+    "1": {
+      "en": "Dry-mouthed"
+    },
+    "2": {
+      "en": "Thirsty"
+    },
+    "3": {
+      "en": "Parched"
+    },
+    "4": {
+      "en": "Arid"
+    },
+    "5": {
+      "en": "Dehydrated"
+    }
+  },
+  "ordinal": {
+    "0": {
+      "en": "Zeroth"
+    },
+    "1": {
+      "en": "First"
+    },
+    "2": {
+      "en": "Second"
+    },
+    "3": {
+      "en": "Thrid"
+    }
+  },
+  "season": {
+    ":early_spring": {
+      "en": "Early Spring"
+    },
+    "mid_spring": {
+      "en": "Mid Spring"
+    },
+    "late_spring": {
+      "en": "Late Spring"
+    },
+    "early_summer": {
+      "en": "Early Summer"
+    },
+    "mid_summer": {
+      "en": "Mid Summer"
+    },
+    "late_summer": {
+      "en": "Late Summer"
+    },
+    "early_fall": {
+      "en": "Early Fall"
+    },
+    "mid_fall": {
+      "en": "Mid Fall"
+    },
+    "late_fall": {
+      "en": "Late Fall"
+    },
+    "early_winter": {
+      "en": "Early Winter"
+    },
+    "mid_winter": {
+      "en": "Mid Winter"
+    },
+    "late_winter": {
+      "en": "Late Winter"
+    }
+  },
+  "time": {
+    "day": {
+      "en": "Daytime"
+    },
+    "morning": {
+      "en": "Morning"
+    },
+    "evening": {
+      "en": "Evening"
+    },
+    "night": {
+      "en": "Nighttime"
+    }
+  },
+  "action": {
+    "wait": {
+      "en": "Wait"
+    },
+    "build_shelter": {
+      "en": "Build shelter"
+    },
+    "check_inventory": {
+      "en": "Check inventory"
+    },
+    "explore_nearby": {
+      "en": "Explore nearby"
+    },
+    "eat": {
+      "en": "Eat"
+    },
+    "drink": {
+      "en": "Drink"
+    },
+    "craft": {
+      "en": "Craft"
+    },
+    "build_fire": {
+      "en": "Build fire"
+    },
+    "refuel_fire": {
+      "en": "Refuel fire"
+    },
+    "manage_equipment": {
+      "en": "Manage equipment"
+    },
+    "sleep": {
+      "en": "Sleep until morning"
+    },
+    "take_trail": {
+      "en": "Take trail"
+    }
+  },
+  "common": {
+    "ok": {
+      "en": "OK"
+    },
+    "back": {
+      "en": "Back"
+    },
+    "yes": {
+      "en": "Yes"
+    },
+    "no": {
+      "en": "No"
+    }
+  },
+  "shelter": {
+    "lean-to": {
+      "en": "Lean-to"
+    }
+  },
+  "item": {
+    "berries": {
+      "en": "berry"
+    },
+    "wood": {
+      "en": "wood"
+    },
+    "wooden_spear": {
+      "en": "wooden spear"
+    },
+    "raw_venison": {
+      "en": "raw venison"
+    },
+    "twigs": {
+      "en": "twigs"
+    },
+    "fire_starter": {
+      "en": "fire starter"
+    },
+    "cooked_venison": {
+      "en": "cooked venison"
+    },
+    "deer_pelt": {
+      "en": "deer pelt"
+    },
+    "tattered_cloak": {
+      "en": "tattered cloak"
+    },
+    "empty_bottle": {
+      "en": "empty bottle"
+    },
+    "water_bottle": {
+      "en": "water bottle"
+    },
+    "torch": {
+      "en": "torch"
+    },
+    "stone": {
+      "en": "stone"
+    },
+    "stone_hatchet":{
+      "en": "stone hatchet"
+    }
+  },
+  "fire": {
+    "0": {
+      "en": "extinguished"
+    },
+    "1": {
+      "en": "just glowing embers"
+    },
+    "2": {
+      "en": "smoldering"
+    },
+    "3": {
+      "en": "burning"
+    },
+    "4": {
+      "en": "raging"
+    }
+  }
+}

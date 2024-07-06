@@ -1,0 +1,50 @@
+{
+  "exploreNearby": {
+    "spring": [
+      {
+        "item:wood": 5,
+        "item:berries": 3
+      },
+      {
+        "item:twigs": 4,
+        "item:stone": 3
+      }
+    ],
+    "summer": [
+      {
+        "item:wood": 5,
+        "item:berries": 6
+      },
+      {
+        "item:twigs": 4,
+        "item:stone": 3
+      }
+    ],
+    "fall": [
+      {
+        "item:wood": 6,
+        "item:berries": 6
+      },
+      {
+        "item:twigs": 6,
+        "item:stone": 1
+      }
+    ],
+    "winter": [
+      {
+        "item:wood": 8
+      },
+      {
+        "item:twigs": 6
+      }
+    ],
+    "rare": [
+      "item:tattered_cloak",
+      "item:empty_bottle"
+    ],
+    "hatchet": [
+      "item:wood",
+      "item:twigs"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "item:wood": {
+    "flammability": 10,
+    "damage": 5
+  },
+  "item:berries": {
+    "food": 5,
+    "water": 2
+  },
+  "item:wooden_spear": {
+    "flammability": 25,
+    "damage": 25
+  },
+  "item:twigs": {
+    "flammability": 2
+  },
+  "item:fire_starter": {
+    "flammability": 15
+  },
+  "item:raw_venison": {},
+  "item:cooked_venison": {
+    "food": 50
+  },
+  "item:deer_pelt": {
+    "equipable": true,
+    "temperature": 20
+  },
+  "item:tattered_cloak": {
+    "equipable": true,
+    "temperature": 40
+  },
+  "item:empty_bottle": {},
+  "item:water_bottle": {
+    "water": 30
+  },
+  "item:torch": {
+    "flammability": 2
+  },
+  "item:stone_hatchet":{
+    "damage": 20
+  },
+  "item:stone":{}
+}
