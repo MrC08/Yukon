@@ -5,7 +5,8 @@
   },
   "item:berries": {
     "food": 5,
-    "water": 2
+    "water": 2,
+    "drink_alt_text": "item:berry_juice"
   },
   "item:wooden_spear": {
     "flammability": 25,

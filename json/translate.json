@@ -1,7 +1,8 @@
 {
   "text": {
     "title": {
-      "en": "Yukon"
+      "en": "Yukon",
+      "es": "Yukon"
     },
     "play": {
       "en": "Play",
@@ -11,8 +12,19 @@
       "en": "Language",
       "es": "Idioma"
     },
+    "settings": {
+      "text": {
+        "en": "Settings",
+        "es": "Opciones"
+      },
+      "contrast": {
+        "en": "Change contrast mode",
+        "es": "Cambiar el modo de constraste"
+      }
+    },
     "win": {
-      "en": "After your long journey, you finally made it. You won."
+      "en": "After your long journey, you finally made it. You won.",
+      "es": "Después de tu trayecto largo, por fin has llegado. Tú has ganado."
     },
     "death": {
       "screen": {
@@ -21,424 +33,536 @@
       },
       "cause": {
         "text": {
-          "en": "Cause of death: "
+          "en": "Cause of death: ",
+          "es": "Causa de muerte: "
         },
         "dehydration": {
-          "en": "Dehydration"
+          "en": "Dehydration",
+          "es": "Deshidratación"
         },
         "starvation": {
-          "en": "Starvation"
+          "en": "Starvation",
+          "es": "Hambre"
         },
         "freezing": {
-          "en": "Hypothermia"
+          "en": "Hypothermia",
+          "es": "Hipotermia"
         },
         "animal_attack": {
-          "en": "Animal attack"
+          "en": "Animal attack",
+          "es": "Ataque por un animal"
         },
-        "cholera": {
-          "en": "Cholera"
+        "dysentary": {
+          "en": "Dysentary",
+          "es": "Disentería"
         },
         "appendicitis": {
-          "en": "Appendicitis"
+          "en": "Appendicitis",
+          "es": "Apendicitis"
         }
       }
     },
     "shelter": {
       "missing": {
-        "en": "You do not have enough materials to make a shelter."
+        "en": "You do not have enough materials to make a shelter.",
+        "es": "No tienes suficiente materiales para hacer un refugio."
       },
       "choose": {
-        "en": "Which shelter?"
+        "en": "Which shelter?",
+        "es": "¿Cuál refugio?"
       },
       "built": {
         "lean-to": {
-          "en": "You built a lean-to!"
+          "en": "You built a lean-to!",
+          "es": "¡Contruiste un cobertizo!"
         }
       }
     },
     "inventory": {
       "you_have": {
-        "en": "You have"
+        "en": "You have",
+        "es": "Tú tienes"
       },
       "empty": {
-        "en": "There isn't anything in your inventory."
+        "en": "There isn't anything in your inventory.",
+        "es": "No hay nada en tu inventario."
       }
     },
     "explore": {
       "found": {
-        "en": "You go exploring around the camp. You found:"
+        "en": "You go exploring around the camp. You found:",
+        "es": "Exploras cerca del campamento. Encontraste:"
       },
       "water": {
         "found": {
-          "en": "You found some water! Drink it?"
+          "en": "You found some water! Drink it?",
+          "es": "¡Encontraste alguna agua! ¿La bebes?"
         },
         "drank": {
-          "en": "The water was clean. You drank it."
+          "en": "The water was clean. You drank it.",
+          "es": "El agua fue limpia. La bebiste."
         },
         "dirty": {
-          "en": "Upon closer inspection, the water doesn't look clean. Drink it anyways?"
+          "en": "Upon closer inspection, the water doesn't look clean. Drink it anyways?",
+          "es": "Tras de acercar un poco más, el agua no se ve limpa. ¿Todavía, la bebes?"
         },
         "drank_anyways": {
-          "en": "You drank the water anyways. Maybe you shouldn't have..."
+          "en": "You drank the water anyways. Maybe you shouldn't have...",
+          "es": "Bebes el agua de todas maneras. Quizá no debías haber..."
         }
       },
       "deer": {
         "found": {
-          "en": "You see a deer. Try and hunt it?"
+          "en": "You see a deer. Try and hunt it?",
+          "es": "Ves un venado. ¿Tratas de cazarlo?"
         },
         "kill": {
-          "en": "You managed to kill the deer!"
+          "en": "You managed to kill the deer!",
+          "es": "¡Lograste matar el venado!"
         },
         "escape": {
-          "en": "The deer managed to run off."
+          "en": "The deer managed to run off.",
+          "es": "El venado salió correido"
         }
       },
       "torch_burn_out": {
-        "en": "You torch burnt out while exploring."
+        "en": "You torch burnt out while exploring.",
+        "es": "Tu antorcha se quemó cuándo explorabas."
       }
     },
     "eat": {
       "missing": {
-        "en": "You do not have any food."
+        "en": "You do not have any food.",
+        "es": "No tienes ninguna comida."
       },
       "choose": {
-        "en": "What to eat?"
+        "en": "What to eat?",
+        "es": "¿Que comes?"
       }
     },
     "drink": {
       "missing": {
-        "en": "You do not have anything to drink."
+        "en": "You do not have anything to drink.",
+        "es": "No tienes ninguna bebidas."
       },
       "choose": {
-        "en": "What to drink?"
+        "en": "What to drink?",
+        "es": "¿Qué bebes?"
       }
     },
     "craft": {
       "missing": {
-        "en": "You can't craft anything right now."
+        "en": "You can't craft anything right now.",
+        "es": "No puedes elaborar nada ahora."
       },
       "choose": {
-        "en": "Which recipe?"
+        "en": "Which recipe?",
+        "es": "¿Cuál receta?"
       },
       "requires": {
-        "en": "requires"
+        "en": "requires",
+        "es": "require"
       },
       "crafted": {
-        "en": "You crafted a"
+        "en": "You crafted a",
+        "es": "Elaboraste un(a)"
       }
     },
     "fire": {
       "missing": {
-        "en": "You do not have any flammable material."
+        "en": "You do not have any flammable material.",
+        "es": "No tienes nada inflamable."
       },
-      "feul": {
-        "en": "What to use as fuel?"
-      }
-    },
-    "refuel": {
-      "missing": {
-        "en": "You don't have anything flammable."
-      },
-      "choose": {
-        "en": "What to burn?"
+      "fuel": {
+        "en": "What to burn?",
+        "es": "¿Qué quemas?"
       }
     },
     "equipment": {
       "current": {
-        "en": "Right now, you're using: "
+        "en": "Right now, you're using: ",
+        "es": "Ahorita, llevas: "
       },
       "missing": {
-        "en": "You don't have anything equipped right now."
+        "en": "You don't have anything equipped right now.",
+        "es": "No llevas nada ahorita."
       },
       "unequip": {
-        "en": "Take off "
+        "en": "Take off ",
+        "es": "Quitarse "
       },
       "choose": {
-        "en": "What to equip?"
+        "en": "What to equip?",
+        "es": "¿Qué llevas?"
       }
     },
     "sleep": {
       "cold": {
-        "en": "Its too cold to sleep."
+        "en": "Its too cold to sleep.",
+        "es": "Tienes demasiado frío por dormir"
       },
       "wake_up": {
-        "en": "You woke up. Hours slept for: "
+        "en": "You woke up. Hours slept for: ",
+        "es": "Te despertaste. Horas dormías: "
       }
     },
     "trail": {
       "find": {
-        "en": "You found a trail!"
+        "en": "You found a trail!",
+        "es": "¡Encontraste un sendero!"
       },
       "night": {
-        "en": "It is becoming night. At night, travel through the wilderness is dangerous. Get off the trail?"
+        "en": "It is becoming night. At night, travel through the wilderness is dangerous. Get off the trail?",
+        "es": "La noche viene pronto. Por la noche, travesar la tierra virgen es peligroso. ¿Sales el sendero?"
       },
       "howls": {
-        "en": "You hear howling. Maybe you should've waited until day..."
+        "en": "You hear howling. Maybe you should've waited until day...",
+        "es": "Oyes los aullidos. Quizá debías haber esperado hasta el día..."
       },
       "end": {
-        "en": "You followed the trail all the way to its terminus. You decide to start a new camp."
-      },
-      "take": {
-        "en": "Taking trail"
+        "en": "You followed the trail all the way to its terminus. You decide to start a new camp.",
+        "es": "Seguiste el sendero haste su extremo. Decides empezar un nuevo campamento."
       }
     }
   },
   "temperature": {
     "hot": {
-      "en": "Hot"
+      "en": "Hot",
+      "es": "Caliente"
     },
     "nice": {
-      "en": "Nice"
+      "en": "Nice",
+      "es": "Rica"
     },
     "cool": {
-      "en": "Cool"
+      "en": "Cool",
+      "es": "Fresca"
     },
     "cold": {
       "1": {
-        "en": "Cold"
+        "en": "Cold",
+        "es": "Fría"
       },
       "2": {
-        "en": "Very Cold"
+        "en": "Very Cold",
+        "es": "Muy fría"
       },
       "3": {
-        "en": "Frigid"
+        "en": "Frigid",
+        "es": "Frígida"
       },
       "4": {
-        "en": "Sub-zero"
+        "en": "Sub-zero",
+        "es": "Bajo cero"
       },
       "5": {
-        "en": "Far below zero"
+        "en": "Far below zero",
+        "es": "Muy por debajo de cero"
       },
       "6": {
-        "en": "hypothermic"
+        "en": "Hypothermic",
+        "es": "Hipotérmica"
       },
       "7": {
-        "en": "glacial"
+        "en": "Glacial",
+        "es": "Glacial"
       }
     }
   },
   "hunger": {
     "0": {
-      "en": "Full"
+      "en": "Full",
+      "es": "Cero"
     },
     "1": {
-      "en": "Peckish"
+      "en": "Peckish",
+      "es": "un poquito de"
     },
     "2": {
-      "en": "Hungry"
+      "en": "Hungry",
+      "es": "un poco de"
     },
     "3": {
-      "en": "Famished"
+      "en": "Famished",
+      "es": "alguna"
     },
     "4": {
-      "en": "Ravenous"
+      "en": "Ravenous",
+      "es": "Mucha"
     },
     "5": {
-      "en": "Starving"
+      "en": "Starving",
+      "es": "Mucha, mucha"
     }
   },
   "thirst": {
     "0": {
-      "en": "Hydrated"
+      "en": "Hydrated",
+      "es": "Cero"
     },
     "1": {
-      "en": "Dry-mouthed"
+      "en": "Dry-mouthed",
+      "es": "un poquito de"
     },
     "2": {
-      "en": "Thirsty"
+      "en": "Thirsty",
+      "es": "un poco de"
     },
     "3": {
-      "en": "Parched"
+      "en": "Parched",
+      "es": "alguna"
     },
     "4": {
-      "en": "Arid"
+      "en": "Arid",
+      "es": "Mucha"
     },
     "5": {
-      "en": "Dehydrated"
+      "en": "Dehydrated",
+      "es": "Mucha, mucha"
     }
   },
   "ordinal": {
     "0": {
-      "en": "Zeroth"
+      "en": "Zeroth",
+      "es": "0°"
     },
     "1": {
-      "en": "First"
+      "en": "First",
+      "es": "Primer"
     },
     "2": {
-      "en": "Second"
+      "en": "Second",
+      "es": "Segundo"
     },
     "3": {
-      "en": "Thrid"
+      "en": "Thrid",
+      "es": "Tercer"
     }
   },
   "season": {
     ":early_spring": {
-      "en": "Early Spring"
+      "en": "Early Spring",
+      "es": "Principios de primavera"
     },
     "mid_spring": {
-      "en": "Mid Spring"
+      "en": "Mid Spring",
+      "es": "Mediados de primavera"
     },
     "late_spring": {
-      "en": "Late Spring"
+      "en": "Late Spring",
+      "es": "Finales de primavera"
     },
     "early_summer": {
-      "en": "Early Summer"
+      "en": "Early Summer",
+      "es": "Principios de verano"
     },
     "mid_summer": {
-      "en": "Mid Summer"
+      "en": "Mid Summer",
+      "es": "Mediados de verano"
     },
     "late_summer": {
-      "en": "Late Summer"
+      "en": "Late Summer",
+      "es": "Finales de verano"
     },
     "early_fall": {
-      "en": "Early Fall"
+      "en": "Early Fall",
+      "es": "Principios de otoño"
     },
     "mid_fall": {
-      "en": "Mid Fall"
+      "en": "Mid Fall",
+      "es": "Mediados de otoño"
     },
     "late_fall": {
-      "en": "Late Fall"
+      "en": "Late Fall",
+      "es": "Finales de otoño"
     },
     "early_winter": {
-      "en": "Early Winter"
+      "en": "Early Winter",
+      "es": "Principios de invierno"
     },
     "mid_winter": {
-      "en": "Mid Winter"
+      "en": "Mid Winter",
+      "es": "Mediados de otoño"
     },
     "late_winter": {
-      "en": "Late Winter"
+      "en": "Late Winter",
+      "es": "Finales de invierno"
     }
   },
   "time": {
     "day": {
-      "en": "Daytime"
+      "en": "Daytime",
+      "es": "el día"
     },
     "morning": {
-      "en": "Morning"
+      "en": "Morning",
+      "es": "la madrugada"
     },
     "evening": {
-      "en": "Evening"
+      "en": "Evening",
+      "es": "el crepúsculo"
     },
     "night": {
-      "en": "Nighttime"
+      "en": "Nighttime",
+      "es": "la noche"
     }
   },
   "action": {
     "wait": {
-      "en": "Wait"
+      "en": "Wait",
+      "es": "Esperar"
     },
     "build_shelter": {
-      "en": "Build shelter"
+      "en": "Build shelter",
+      "es": "Construir un refugio"
     },
     "check_inventory": {
-      "en": "Check inventory"
+      "en": "Check inventory",
+      "es": "Revisar tu inventario"
     },
     "explore_nearby": {
-      "en": "Explore nearby"
+      "en": "Explore nearby",
+      "es": "Explorar cerca"
     },
     "eat": {
-      "en": "Eat"
+      "en": "Eat",
+      "es": "Comer"
     },
     "drink": {
-      "en": "Drink"
+      "en": "Drink",
+      "es": "Beber"
     },
     "craft": {
-      "en": "Craft"
+      "en": "Craft",
+      "es": "Elaborar"
     },
     "build_fire": {
-      "en": "Build fire"
+      "en": "Build fire",
+      "es": "Crear un fuego"
     },
     "refuel_fire": {
-      "en": "Refuel fire"
+      "en": "Refuel fire",
+      "es": "Reabastecer tu fuego"
     },
     "manage_equipment": {
-      "en": "Manage equipment"
+      "en": "Manage equipment",
+      "es": "Manejar equipo"
     },
     "sleep": {
-      "en": "Sleep until morning"
+      "en": "Sleep until morning",
+      "es": "Dormir hasta la madrugada"
     },
     "take_trail": {
-      "en": "Take trail"
+      "en": "Take trail",
+      "es": "Tomar el sendero"
     }
   },
   "common": {
     "ok": {
-      "en": "OK"
+      "en": "OK",
+      "es": "OK"
     },
     "back": {
-      "en": "Back"
+      "en": "Back",
+      "es": "Previo"
     },
     "yes": {
-      "en": "Yes"
+      "en": "Yes",
+      "es": "Sí"
     },
     "no": {
-      "en": "No"
+      "en": "No",
+      "es": "No"
     }
   },
   "shelter": {
     "lean-to": {
-      "en": "Lean-to"
+      "en": "Lean-to",
+      "es": "Cobertizo"
     }
   },
   "item": {
     "berries": {
-      "en": "berry"
+      "en": "berry",
+      "es": "baya"
+    },
+    "berry_juice": {
+      "en": "berry juice",
+      "es": "jugo de baya"
     },
     "wood": {
-      "en": "wood"
+      "en": "wood",
+      "es": "madera"
     },
     "wooden_spear": {
-      "en": "wooden spear"
+      "en": "wooden spear",
+      "es": "lanza de madera"
     },
     "raw_venison": {
-      "en": "raw venison"
+      "en": "raw venison",
+      "es": "venado crudo"
     },
     "twigs": {
-      "en": "twigs"
+      "en": "twigs",
+      "es": "ramita"
     },
     "fire_starter": {
-      "en": "fire starter"
+      "en": "fire starter",
+      "es": "encendedor de supervivencia"
     },
     "cooked_venison": {
-      "en": "cooked venison"
+      "en": "cooked venison",
+      "es": "venado cocinado"
     },
     "deer_pelt": {
-      "en": "deer pelt"
+      "en": "deer pelt",
+      "es": "piel de venado"
     },
     "tattered_cloak": {
-      "en": "tattered cloak"
+      "en": "tattered cloak",
+      "es": "capa andrajosa"
     },
     "empty_bottle": {
-      "en": "empty bottle"
+      "en": "empty bottle",
+      "es": "botella vacía"
     },
     "water_bottle": {
-      "en": "water bottle"
+      "en": "water bottle",
+      "es": "botella de agua"
     },
     "torch": {
-      "en": "torch"
+      "en": "torch",
+      "es": "antorcha"
     },
     "stone": {
-      "en": "stone"
+      "en": "stone",
+      "es": "piedra"
     },
     "stone_hatchet":{
-      "en": "stone hatchet"
+      "en": "stone hatchet",
+      "es": "hacha de piedra"
     }
   },
   "fire": {
     "0": {
-      "en": "extinguished"
+      "en": "extinguished",
+      "es": "es extinguido"
     },
     "1": {
-      "en": "just glowing embers"
+      "en": "just glowing embers",
+      "es": "parece casi apagado"
     },
     "2": {
-      "en": "smoldering"
+      "en": "smoldering",
+      "es": "es solamente llamas bajas"
     },
     "3": {
-      "en": "burning"
+      "en": "burning",
+      "es": "está quemándose"
     },
     "4": {
-      "en": "raging"
+      "en": "raging",
+      "es": "está quemándose radiante"
     }
   }
 }
