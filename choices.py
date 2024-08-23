@@ -8,6 +8,8 @@ class GlobalChoiceSettings:
   
 
 class Choices:
+  GlobalContrastMode = 0
+
 
   def __init__(self, prompt, options):
     self.prompt = prompt
@@ -28,8 +30,15 @@ class Choices:
 
       tempOptions = str(tempOptions)
       
-      bgColor = "\033[" + ("47" if (i % 2) else "100") + "m"
-      fgColor = "\033[" + ("90" if (i % 2) else "37") + "m"
+      if Choices.GlobalContrastMode == 0:
+        bgColor = "\033[" + ("47" if (i % 2) else "100") + "m"
+        fgColor = "\033[" + ("90" if (i % 2) else "37") + "m"
+      
+      elif Choices.GlobalContrastMode == 1:
+        bgColor = "\033[38;2;" + ("50;50;50" if (i % 2) else "220;220;220") + "m"
+        fgColor = "\033[48;2;" + ("220;220;220" if (i % 2) else "50;50;50") + "m"
+      
+      
       insert = f"[{i}]"
       secondSpacer = ("{0:" + str(GlobalChoiceSettings.screen.width - 5) + "}")
       print(bgColor + fgColor + "{0:5}".format(insert) +

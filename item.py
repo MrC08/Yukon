@@ -36,6 +36,10 @@ class Item:
   def getTemperature(self, zeroNulliesStats=True):
     if zeroNulliesStats and self.count <= 0:  return 0
     return Item.rItems[self.type].get("temperature", 0)
+   
+  def getDrinkString(self, zeroNulliesStats=True):
+    if zeroNulliesStats and self.count <= 0:  return ""
+    return Item.rItems[self.type].get("drink_alt_text", self.type)
 
 
   def __repr__(self):

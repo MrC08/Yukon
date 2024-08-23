@@ -28,6 +28,20 @@ def environmentText(temperature, food, water, day, hour, fire, distance):
       s = s + f" Your fire is {a}{utils.fireToString(fire, color=True)}{b}."
     s += f" You have {distance} miles left."
     return s
+  elif t.lang == "es":
+    s = f"La temperatura afuera es {a}{utils.temperatureToString(temperature, color=True)}{b}. Tiene {a}{utils.hungerToString(food, color=True)}{b} hambre, y {a}{utils.thirstToString(water, color=True)}{b} sed. Es el {a}{utils.intToOrdinal((day % 3) + 1)}{b} día de los {a}{utils.getSeason(day, capitalization=False)}{b}. Actualmente, es {a}{utils.hourToTime(hour, day, capitalization=False)}{b}."
+    if innerTemp != temperature:
+      s = s + f" Tu tempuratura es {a}{utils.temperatureToString(innerTemp, color=True, sound=True)}{b}."
+    if fire > 0:
+      s = s + f" Tu fuego {a}{utils.fireToString(fire, color=True)}{b}."
+      
+    if distance > 1:
+      s += f" Te quedan {distance} millas."
+    else:
+      s += f" Te queda solamente una milla."
+    
+    return s
+    
   else:
     return "NO-ENVIRONMENT-TEXT-FOUND-FOR: " + t.lang
 
@@ -74,7 +88,7 @@ def main():
       screen.display()
       c = Choices(
         #t.getString("text:title"),["text:play", "text:language"]
-        t.getString("text:title"),["text:play"]
+        t.getString("text:title"), ["text:play", "text:language", "text:settings:text"]
         ).choose()
 
       if c == 0:
@@ -85,6 +99,16 @@ def main():
         c = Choices(t.getString("text:language"),
                     list(t.getAllLanguages().keys())).choose(key=False, translate=False)
         t.setLanguage(t.getAllLanguages()[c])
+       
+      if c == 2:
+      	c = -1
+      	while c != 0:
+        	screen.display()
+        	c = Choices(t.getString("text:settings:text"), ["common:back", "text:settings:contrast"]).choose()
+        	
+        	if c == 1:
+        	  c = -1
+        	  Choices.GlobalContrastMode = int(not Choices.GlobalContrastMode)
 
   run = True
 
@@ -112,12 +136,12 @@ def main():
   
   def buildGameChoices():
     arr = ["action:wait", "action:check_inventory", "action:craft"]
-
-    if inventory["item:wood"] >= 20:
-      arr.append("action:build_shelter")
     
     if (utils.hourToTime(hour, day, translate=False) != "time:night") or inventory["item:torch"] > 0:
       arr.append("action:explore_nearby")
+
+    if inventory["item:wood"] >= 20:
+      arr.append("action:build_shelter")
 
     elif shelter != None:
       arr.append("action:sleep")
@@ -137,7 +161,7 @@ def main():
     if equip != None or bool(max([int(Item(i, inventory[i]).getEquipable()) for i in inventory])):
       arr.append("action:manage_equipment")
 
-    if trail:
+    if trail and not (utils.hourToTime(hour, day, translate=False) == "time:night" and not nightTravel):
       arr.append("action:take_trail")
     
     return arr
@@ -247,7 +271,6 @@ def main():
       sleepTime = 0
 
     if (not sleeping) and (trailProgress <= 0):
-      print(utils.getCorrectBackgroundImage(hour, day, hasFrozen))
       screen.blit(0, 0, image.getImage(utils.getCorrectBackgroundImage(hour, day, hasFrozen)))
 
 
@@ -354,9 +377,16 @@ def main():
           for i in refinedList:
             lineColor = not lineColor
             
-            bgColor = "\033[" + ("47" if lineColor else "100") + "m"
-            fgColor = "\033[" + ("90" if lineColor else "37") + "m"
+            bgColor = ""
+            fgColor = ""
             
+            if Choices.GlobalContrastMode == 0:
+              bgColor = "\033[" + ("47" if lineColor else "100") + "m"
+              fgColor = "\033[" + ("90" if lineColor else "37") + "m"
+      
+            elif Choices.GlobalContrastMode == 1:
+              bgColor = "\033[38;2;" + ("50;50;50" if lineColor else "220;220;220") + "m"
+              fgColor = "\033[48;2;" + ("220;220;220" if lineColor else "50;50;50") + "m"
             print("\033[0;1m" + bgColor + fgColor + i)
         
         Choices("", ["common:ok"]).choose()
@@ -390,9 +420,9 @@ def main():
         foundTrail = False
         foundDeer = [False, False]
         
-        foundWater = [random.randint(1, 5) == 1, random.randint(1, 2) == 1]
+        foundWater = [random.randint(1, 4) == 1, random.randint(1, 2) == 1]
         if not foundWater[0]:
-          foundTrail = random.randint(1, 8) == 1
+          foundTrail = random.randint(1, 7) == 1
         if not foundTrail:
           foundDeer = [random.randint(1, 4) == 1, random.randint(1, 100) < (max([Item(i, inventory[i]).getDamage() for i in inventory]))]
         
@@ -442,8 +472,10 @@ def main():
 
         if inventory["item:stone_hatchet"] > 0:
           for item in lootTables["hatchet"]:
-            items.append(item)
-            itemCounts.append(random.randint(0, 3))
+            count = random.randint(0, 3)
+            if count != 0:
+              items.append(item)
+              itemCounts.append(count)
 
         for i in range(len(items)):
           inventory[items[i]] += itemCounts[i]
@@ -479,7 +511,7 @@ def main():
               if c == 1:
                 if random.randint(1, 2) == 1:
                   run = False
-                  causeOfDeath = "cholera"
+                  causeOfDeath = "dysentary"
                 else:
                   water += 25
                   Choices(t.getString("text:explore:water:drank_anyways"), ["common:ok"]).choose()
@@ -556,7 +588,7 @@ def main():
         
         for i in inventory.keys():
           if inventory[i] > 0 and Item(i).getWater() > 0:
-            drinks.append(i)
+            drinks.append(Item(i).getDrinkString())
         
         choiceSpaceText()
 
@@ -639,7 +671,7 @@ def main():
           Choices(t.getString("text:fire:mising"), ["common:ok"]).choose()
         else:
           choiceSpaceText()
-          c = Choices(t.getString("text:fire:feul"), ["common:back"] + [Item(i, inventory[i]) for i in items]).choose()
+          c = Choices(t.getString("text:fire:fuel"), ["common:back"] + [Item(i, inventory[i]) for i in items]).choose()
           c -= 1
 
           proceed = True
@@ -664,10 +696,10 @@ def main():
         choiceSpaceText()
 
         if len(flammables) == 0:
-          Choices(t.getString("text:refuel:missing"), ["common:ok"]).choose()
+          Choices(t.getString("text:fire:missing"), ["common:ok"]).choose()
 
         else:
-          c = Choices(t.getString("text:refuel:choose"), ["common:back"] + flammables).choose(key=True)
+          c = Choices(t.getString("text:fire:fuel"), ["common:back"] + flammables).choose(key=True)
   
           if c != 0:
             c -= 1
@@ -708,7 +740,7 @@ def main():
           sleeping = True
           proceed = True
         else:
-          Choices(t.getString("text:sleep:cold"), ["OK"]).choose()
+          Choices(t.getString("text:sleep:cold"), ["common:ok"]).choose()
 
 
       elif c == "action:take_trail":
